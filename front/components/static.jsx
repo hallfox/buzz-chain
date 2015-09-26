@@ -1,14 +1,14 @@
 var SocialMedia = React.createClass({
 	render() {
         return (
-            <div>
-            	<div class="social-media-container">
+            <div className='social-media'>
+            	<div className="social-media-item">
             		Facebook
 				</div>
-				<div class="social-media-container">
+				<div className="social-media-item">
             		Github
 				</div>
-				<div class="social-media-container">
+				<div className="social-media-item">
             		DevPost
 				</div>
 			</div>
@@ -19,9 +19,7 @@ var SocialMedia = React.createClass({
 var Footer = React.createClass({
 	render() {
         return (
-            <div>
-            	This is the footer.
-			</div>
+            <footer>This is the footer.</footer>
         );
     }
 });

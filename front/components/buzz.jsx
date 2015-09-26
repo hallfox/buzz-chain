@@ -2,7 +2,7 @@ var Buzz = React.createClass({
     render() {
         return (
             <div>
-                <div class="buzz-title"></div>
+                <div className="buzz-title"></div>
             </div>
         );
     }

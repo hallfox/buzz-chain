@@ -3,19 +3,21 @@ var Buzz = require('./buzz.jsx');
 
 var Article = React.createClass({
     render() {
+        var buzzes = this.props.buzzData.forEach(function(buzz) {
+            return <Buzz data={buzz} />
+        });
+        
         return (
             <div>
-                <h1 class="article-title"></h1>
-                <div class="author">
-                    <div class="author-image"></div>
-                    <div class="author-name"></div>
+                <h1 className="article-title"></h1>
+                <div className="author">
+                    <div className="author-image"></div>
+                    <div className="author-name"></div>
                     <p> BuzzFeed Staff</p>
                 </div>
                 <SocialMedia />
-                <div class="buzz-list">
-                    this.props.buzzData.forEach(function(buzz) {
-                        return <Buzz data={buzz} />
-                    });
+                <div className="buzz-list">
+                    {buzzes}
                 </div>
                 <SocialMedia />
                 <Footer />
