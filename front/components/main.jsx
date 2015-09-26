@@ -4,6 +4,4 @@ var App = React.createClass({
   }
 });
 
-$(document).ready(function() {
-  React.render(<App />, document.getElementById('buzz-chain'));
-});
+module.exports = App;
