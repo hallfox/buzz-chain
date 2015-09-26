@@ -12,5 +12,11 @@
     "markovchain": "0.0.7",
     "morgan": "~1.6.1",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-watch": "^4.3.5"
   }
 }
