@@ -1,9 +1,41 @@
-var App = React.createClass({
-  render: function() {
-    return <div>Hello buzz-chain</div>;
-  }
+/*
+Article
+├── ArticleTitle
+├── Author
+├── SocialMedia
+├── Buzzes
+|   ├─ SubBuzz
+|   ├─ SubBuzz
+|   ├─ SubBuzz
+|   ├─ SubBuzz
+|   └─ SubBuzz
+├── Social Media
+└── Footer
+*/
+
+var Article = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <ArticleTitle />
+                <Author />
+                <SocialMedia />
+                <Buzzes buzzes={this.props.buzzData} />
+                <SocialMedia />
+                <Footer />
+            </div>
+        );
+    }
 });
 
+var BUZZDATA = [
+  {title: 'Pepe didn\'t eat dinner.', media: 'https://i.imgur.com/19lNyQ8h.jpg'},
+  {title: 'Pepe didn\'t get good grades.', media: 'https://i.imgur.com/19lNyQ8h.jpg'},
+  {title: 'Pepe didn\'t make friends.', media: 'https://i.imgur.com/19lNyQ8h.jpg'},
+  {title: 'Pepe didn\'t make a difference.', media: 'https://i.imgur.com/19lNyQ8h.jpg'},
+  {title: 'Pepe didn\'t matter.', media: 'https://i.imgur.com/19lNyQ8h.jpg'}
+];
+
 $(document).ready(function() {
-  React.render(<App />, document.getElementById('buzz-chain'));
+    React.render(<Article buzzData={BUZZDATA}/>, document.body);
 });
