@@ -102,11 +102,40 @@ var genMarkov = function(search, callback2, res) {
                 });
             }
         ], function(err, result) {
-            res.send(tchain + "\t" + dchain + "\n" + dvchain + "\n" + hchain);
-            console.log("tchain:\t " + tchain);
-            console.log("dchain: \t" + dchain);
-            console.log("dvchain: \t" + dvchain);
-            console.log("hchain: \t" + hchain);
+            res.send({
+                // tchain + "\t" + dchain + "\n" + dvchain + "\n" + hchain
+                'title': tchain[1],
+                'author': {
+                    'name': 'Richard \'MongoDB\' Stallman',
+                    'image': 'http://buzz-chain.jagels.io/RS.png'
+                },
+                'buzzes': [
+                    {
+                        'title': hchain[0],
+                        'desc': dvchain[0]
+                    },
+                    {
+                        'title': hchain[1],
+                        'desc': dvchain[1]
+                    },
+                    {
+                        'title': hchain[2],
+                        'desc': dvchain[2]
+                    },
+                    {
+                        'title': hchain[3],
+                        'desc': dvchain[3]
+                    },
+                    {
+                        'title': hchain[4],
+                        'desc': dvchain[4]
+                    },
+                ]
+            });
+            // console.log("tchain:\t " + tchain);
+            // console.log("dchain: \t" + dchain);
+            // console.log("dvchain: \t" + dvchain);
+            // console.log("hchain: \t" + hchain);
         });
     });
 }
