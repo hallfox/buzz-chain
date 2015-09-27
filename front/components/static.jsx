@@ -31,7 +31,9 @@ var SocialMedia = React.createClass({
 var Footer = React.createClass({
 	render() {
         return (
-            <footer>This is the footer.</footer>
+            <div class="container-fluid">
+                <footer>This is the footer.</footer>
+            </div>
         );
     }
 });

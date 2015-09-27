@@ -10,14 +10,16 @@ var Article = React.createClass({
         return (
             <div class="container">
                 <div>
-                    <h1 className="article-title"></h1>
+                    <h1>BuzzChain Logo goes here</h1>
+                    <h1 className="article-title">9 Things the Pope Hates About Node.js.</h1>
                     <div className="author">
                         <div className="author-image"></div>
-                        <div className="author-name"></div>
+                        <div className="author-name">Vishal Rohra</div>
                         <p> BuzzFeed Staff</p>
                     </div>
                     <SocialMedia />
                 </div>
+                <br>
                 <div className="buzz-list">
                     {buzzes}
                 </div>
