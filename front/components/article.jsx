@@ -10,7 +10,7 @@ var Article = React.createClass({
         return (
             <div className="container">
                 <div>
-                    <h1>BuzzChain Logo</h1>
+                    <img src={'http://i61.tinypic.com/xfqc6x.png'} alt="logo"/>
                     <h1 className="article-title">9 Things the Pope Hates About Node.js</h1>
                     <div className="author">
                         <div className="author-image"></div>
