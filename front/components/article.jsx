@@ -9,7 +9,7 @@ var Article = React.createClass({
         
         return (
             <div class="container">
-                <header>
+                <div>
                     <h1 className="article-title"></h1>
                     <div className="author">
                         <div className="author-image"></div>
@@ -17,7 +17,7 @@ var Article = React.createClass({
                         <p> BuzzFeed Staff</p>
                     </div>
                     <SocialMedia />
-                </header>
+                </div>
                 <div className="buzz-list">
                     {buzzes}
                 </div>
