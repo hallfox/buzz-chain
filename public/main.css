@@ -35,6 +35,11 @@ body {
 	margin-bottom: 20px;
 }
 
+.buzz {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .buzz-title {
 	font-size: 26px;
     line-height: 28px;
