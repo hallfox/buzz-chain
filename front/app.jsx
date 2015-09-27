@@ -1,6 +1,5 @@
 /*
   Article
-  ├── ArticleTitle
   ├── Author
   ├── SocialMedia
   ├── Buzzes
