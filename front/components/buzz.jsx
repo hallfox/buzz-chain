@@ -4,7 +4,7 @@ var Buzz = React.createClass({
         return (
             <div className="buzz">
                 <div className="buzz-title">{this.props.index}. {this.props.data.title}</div>
-                <className="images" img src={this.props.data.media} />
+                <div className="images"> <img src={this.props.data.media} /></div>
             </div>
         );
     }
