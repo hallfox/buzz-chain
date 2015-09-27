@@ -3,15 +3,15 @@ var Buzz = require('./buzz.jsx');
 
 var Article = React.createClass({
     render() {
-        var buzzes = this.props.buzzData.map(function(buzz) {
-            return <Buzz data={buzz} />
+        var buzzes = this.props.buzzData.map(function(buzz, index) {
+            return <Buzz data={buzz} index={index + 1} />
         });
         
         return (
             <div className="container">
                 <div>
-                    <h1>BuzzChain Logo</h1>
-                    <h1 className="article-title">9 Things the Pope Hates About Node.js</h1>
+                    <img src={'http://i60.tinypic.com/aorl7s.png'} alt="logo" height="59" width="379"/>
+                    <h1 className="article-title">5 Things the Pope Hates About Node.js</h1>
                     <div className="author">
                         <div className="author-image"></div>
                         <div className="author-name">Richard Stallman</div>

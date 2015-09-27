@@ -27,6 +27,8 @@ module.exports.feeds = function(args,callback) {
 
 module.exports.search = function(args, callback) {
     request(SEARCHURL + '?q=' + args.q, function(error, response, body) {
+        if(!error)
+            body = JSON.parse(body);
         callback(error, body);
     });
 }
