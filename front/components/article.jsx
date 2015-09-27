@@ -10,7 +10,7 @@ var Article = React.createClass({
         return (
             <div className="container">
                 <div>
-                    <h1>BuzzFeed Logo</h1>
+                    <h1>BuzzChainLogo</h1>
                     <h1 className="article-title"></h1>
                     <div className="author">
                         <div className="author-image"></div>
@@ -19,6 +19,7 @@ var Article = React.createClass({
                     </div>
                     <SocialMedia />
                 </div>
+                <br>
                 <div className="buzz-list">
                     {buzzes}
                 </div>
