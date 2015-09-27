@@ -11,3 +11,18 @@ var Article = require('./components/article.jsx');
 $(document).ready(function() {
   React.render(<Article buzzData={BUZZDATA} />, document.getElementById('buzz-chain'));
 });
+
+/*
+Article
+├── ArticleTitle
+├── Author
+├── Social Media
+├── Buzzes
+|   ├─ SubBuzz
+|   ├─ SubBuzz
+|   ├─ SubBuzz
+|   ├─ SubBuzz
+|   └─ SubBuzz
+├── Social Media
+└── Footer
+*/

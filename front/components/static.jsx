@@ -33,8 +33,9 @@ var Footer = React.createClass({
         return (
             <div class="container-fluid" className="footer-title">
                 <footer>
-                <p>'Created at HackNY Fall\'15. Praise the lord'</p>
-                <p>'PepeTheFrog'</p>
+                <p>Created at HackNY Fall2015. Praise the lord&#33;</p>
+                <p>&#169;PepeTheFrog</p>
+                </footer>
             </div>
         );
     }
