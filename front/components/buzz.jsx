@@ -7,7 +7,7 @@ var Buzz = React.createClass({
                 <div className="images"><img src={this.props.data.media} />
             </div>
         );
-    }
+    
 });
 
 module.exports = Buzz;
