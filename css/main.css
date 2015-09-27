@@ -1,0 +1,44 @@
+
+body {
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+.article-title {
+
+}
+
+.author {
+    overflow: hidden;
+    zoom: 1;
+    width: 310px;
+    margin-bottom: 5px;
+    height: 60px;
+    display: block;
+}
+
+.author-image {
+	float: left;
+    margin-right: 10px;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.author-name {
+	font-size: 17px;
+    font-weight: 600;
+}
+
+.buzz-list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.buzz-title {
+	font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #121212;
+    padding: 0 0 8px 0;
+    margin: 0;
+}
