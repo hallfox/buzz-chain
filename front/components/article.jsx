@@ -11,6 +11,8 @@ var Article = React.createClass({
             <div className="container">
                 <div>
                     <img src="buzzchain.png">
+                </div>
+                </div>
                     <h1 className="article-title">9 Things the Pope Hates About Node.js</h1>
                     <div className="author">
                         <div className="author-image"></div>
