@@ -11,12 +11,12 @@ var sanatize = function(string) {
 
 module.exports.scraper = function(err, body) {
     var feed = body;
-    async.each(feed.flow, function(article, callback) {
+    async.each(feed, function(article, callback) {
         var buzzId = article.content.buzz_id;
         buzzfeed.buzz({'buzz_id': buzzId}, function(error, body) {
             var buzz = body.buzz;
             var interestingContent = {
-                buzz_id: buzzId,
+                _id: buzzId,
                 title: sanatize(article.content.feed.title),
                 buzz_description: sanatize(buzz.description),
                 headers: [],
@@ -49,7 +49,7 @@ module.exports.searchScraper = function(err, body) {
             var buzz = body.buzz;
             console.log(buzz);
             var interestingContent = {
-                buzz_id: buzzId,
+                _id: buzzId,
                 title: buzz.title,
                 buzz_description: buzz.description,
                 headers: [],
@@ -70,7 +70,7 @@ module.exports.searchScraper = function(err, body) {
     }, function(err) {
         if(err)
             console.log(err);
-        database.close()
+        // database.close()
     });
 }
 
@@ -78,6 +78,6 @@ var collection, database;
 mongodb.connect('mongodb://localhost:27017/buzz', function(err, db) {
     database = db;
     collection = db.collection('stories');
-    // buzzfeed.feeds({'feed': 'lol'}, module.exports.scraper);
+    buzzfeed.feeds({'feed': 'lol'}, module.exports.scraper);
     // buzzfeed.search({'q': 'the pope'}, module.exports.searchScraper);
 });
