@@ -8,14 +8,16 @@ var Article = React.createClass({
         });
         
         return (
-            <div>
-                <h1 className="article-title"></h1>
-                <div className="author">
-                    <div className="author-image"></div>
-                    <div className="author-name"></div>
-                    <p> BuzzFeed Staff</p>
-                </div>
-                <SocialMedia />
+            <div class="container">
+                <header>
+                    <h1 className="article-title"></h1>
+                    <div className="author">
+                        <div className="author-image"></div>
+                        <div className="author-name"></div>
+                        <p> BuzzFeed Staff</p>
+                    </div>
+                    <SocialMedia />
+                </header>
                 <div className="buzz-list">
                     {buzzes}
                 </div>
