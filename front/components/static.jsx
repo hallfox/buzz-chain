@@ -35,6 +35,7 @@ var Footer = React.createClass({
                 <footer>
                 <p>'Created at HackNY Fall\'15. Praise the lord'</p>
                 <p>'PepeTheFrog'</p>
+                </footer>
             </div>
         );
     }
