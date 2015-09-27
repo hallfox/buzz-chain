@@ -61,3 +61,25 @@ body {
     color: #f8f8f8;
     background: light-gray;
 }
+
+#sm-repo {
+    background:#181818;
+}
+#sm-devpost {
+    background:#013E53;
+}
+#sm-pine {
+    background:red;
+}
+#sm-tay {
+    background:orange;
+}
+#sm-tim {
+    background:green;
+}
+#sm-vish {
+    background:blue;
+}
+#sm-will {
+    background:purple;
+}

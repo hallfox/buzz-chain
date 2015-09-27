@@ -2,25 +2,25 @@ var SocialMedia = React.createClass({
 	render() {
         return (
             <div className='social-media'>
-            	<a href="https://github.com/hallfox/buzz-chain" className="social-media-item" style={{background:#181818}}>
+            	<a href="https://github.com/hallfox/buzz-chain" className="social-media-item" id="sm-repo">
                     Repository
 				</a>
-				<a href="https://devpost.com" className="social-media-item" style={{background:#13E53}}>
+				<a href="https://devpost.com" className="social-media-item" id="sm-devpost">
             		DevPost
 				</a>
-				<a href="https://github.com/octref" className="social-media-item" style={{background:red}}>
+				<a href="https://github.com/octref" className="social-media-item" id="sm-pine">
             		Pine
 				</a>
-                <a href="https://github.com/hallfox" className="social-media-item" style={{background:orange}}>
+                <a href="https://github.com/hallfox" className="social-media-item" id="sm-tay">
                     Taylor
                 </a>
-                <a href="https://github.com/AvocadosConstant" className="social-media-item" style={{background:green}}>
+                <a href="https://github.com/AvocadosConstant" className="social-media-item" id="sm-tim">
                     Tim
                 </a>
-                <a href="https://github.com/vishalrohra" className="social-media-item" style={{background:blue}}>
+                <a href="https://github.com/vishalrohra" className="social-media-item" id="sm-vish">
                     Vishal
                 </a>
-                <a href="https://github.com/wijagels" className="social-media-item" style={{background:purple}}>
+                <a href="https://github.com/wijagels" className="social-media-item" id="sm-will">
                     Will
                 </a>
 			</div>
