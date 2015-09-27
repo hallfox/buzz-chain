@@ -1,18 +1,3 @@
-/*
-  Article
-  ├── Author
-  ├── SocialMedia
-  ├── Buzzes
-  |   ├─ SubBuzz
-  |   ├─ SubBuzz
-  |   ├─ SubBuzz
-  |   ├─ SubBuzz
-  |   └─ SubBuzz
-  ├── Social Media
-  └── Footer
-*/
-
-
 var BUZZDATA = [
   {title: 'Pepe didn\'t eat dinner.', media: 'https://i.imgur.com/19lNyQ8h.jpg'},
   {title: 'Pepe didn\'t get good grades.', media: 'https://i.imgur.com/19lNyQ8h.jpg'},

@@ -3,7 +3,7 @@ var Buzz = require('./buzz.jsx');
 
 var Article = React.createClass({
     render() {
-        var buzzes = this.props.buzzData.forEach(function(buzz) {
+        var buzzes = this.props.buzzData.map(function(buzz) {
             return <Buzz data={buzz} />
         });
         
