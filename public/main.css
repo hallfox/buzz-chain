@@ -108,13 +108,13 @@ body {
 }
 
 @media (min-width:650px) {
-    imagess {
+    .imagess {
     width:"620px"
     }
 }
-    
+
 @media (max-width:649px) {
-    imagess {
+    .imagess {
     width:100%
     }
 }
