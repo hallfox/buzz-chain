@@ -15,7 +15,7 @@ var Article = React.createClass({
                     <div className="author">
                         <div className="author-image"></div>
                         <div className="author-name">Richard Stallman</div>
-                        <p> BuzzFeed Staff</p>
+                        <p>BuzzFeed Staff</p>
                     </div>
                     <SocialMedia />
                 </div>
