@@ -12,5 +12,5 @@ var Buzz = React.createClass({
 
 module.exports = Buzz;
 
-@media (min-width:500px){imagess{width:"620px"}}
-@media (max-width:499px){imagess{width:100%}}
+@media (min-width:650px){imagess{width:"620px"}}
+@media (max-width:649px){imagess{width:100%}}
