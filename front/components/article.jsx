@@ -7,7 +7,7 @@ var imgArr = [
     "http://i.imgur.com/ebMsSFY.png",
     "http://i.imgur.com/dCT18GU.jpg",
     "http://i.imgur.com/ZqoLvyD.jpg",
-    "http://i.imgur.com/Wned0se.png",
+    "http://i.imgur.com/QYPlmPQ.png",
     "http://i.imgur.com/aWW56UQ.png",
     "http://i.imgur.com/TgVwMGG.jpg"
 ];
