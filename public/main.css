@@ -58,12 +58,14 @@ body {
 .social-media-item {
     display: block;
     position: relative;
-    width: 99px;
+    width: 80px;
     margin: 0 5px 5px 0;
-    height: 39px;
+    height: 24px;
     float: left;
     color: #f8f8f8;
     background: light-gray;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #sm-repo {
@@ -73,17 +75,17 @@ body {
     background:#013E53;
 }
 #sm-pine {
-    background:red;
+    background:#9A8181;
 }
 #sm-tay {
-    background:orange;
+    background:#1CC456;
 }
 #sm-tim {
-    background:green;
+    background:#1AA8BE;
 }
 #sm-vish {
-    background:blue;
+    background:#BE951A;
 }
 #sm-will {
-    background:purple;
+    background:#B745BF;
 }
