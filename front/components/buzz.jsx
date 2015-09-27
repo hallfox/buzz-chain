@@ -1,4 +1,4 @@
-var imgArr [
+var imgArr = [
 	{url: "http://i.imgur.com/Mo3fHAa.jpg"},
 	{url: "http://i.imgur.com/fSSh7df.png"},
 	{url: "http://i.imgur.com/ebMsSFY.png"},
