@@ -49,6 +49,15 @@ body {
     margin: 0;
 }
 
+.footer-title {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #121212;
+    padding: 0 0 8px 0;
+    margin: 0;
+}
+
 .social-media {
     border: none;
     padding: 8px 0px 8px 0px;

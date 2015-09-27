@@ -11,7 +11,7 @@ var Article = React.createClass({
             <div className="container">
                 <div>
                     <img src={'http://i60.tinypic.com/aorl7s.png'} alt="logo" height="59" width="379"/>
-                    <h1 className="article-title">9 Things the Pope Hates About Node.js</h1>
+                    <h1 className="article-title">5 Things the Pope Hates About Node.js</h1>
                     <div className="author">
                         <div className="author-image"></div>
                         <div className="author-name">Richard Stallman</div>
