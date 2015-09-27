@@ -109,26 +109,39 @@ var genMarkov = function(search, callback2, res) {
                     'name': 'Richard \'MongoDB\' Stallman',
                     'image': 'http://buzz-chain.jagels.io/RS.png'
                 },
+                'description': dchain[8],
                 'buzzes': [
                     {
                         'title': hchain[0],
-                        'desc': dvchain[0]
+                        'desc': dchain[0]
                     },
                     {
                         'title': hchain[1],
-                        'desc': dvchain[1]
+                        'desc': dchain[1]
                     },
                     {
                         'title': hchain[2],
-                        'desc': dvchain[2]
+                        'desc': dchain[2]
                     },
                     {
                         'title': hchain[3],
-                        'desc': dvchain[3]
+                        'desc': dchain[3]
                     },
                     {
                         'title': hchain[4],
-                        'desc': dvchain[4]
+                        'desc': dchain[4]
+                    },
+                    {
+                        'title': hchain[5],
+                        'desc': dchain[5]
+                    },
+                    {
+                        'title': hchain[6],
+                        'desc': dchain[6]
+                    },
+                    {
+                        'title': hchain[7],
+                        'desc': dchain[7]
                     },
                 ]
             });
