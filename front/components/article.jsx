@@ -3,7 +3,7 @@ var Buzz = require('./buzz.jsx');
 
 var Article = React.createClass({
     render() {
-        var buzzes = this.props.buzzData.map(function(buzz, index) {
+        var buzzes = this.props.buzzData.buzzes.map(function(buzz, index) {
             return <Buzz data={buzz} index={index + 1} />
         });
         

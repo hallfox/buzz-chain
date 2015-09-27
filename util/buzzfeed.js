@@ -1,4 +1,5 @@
 var request = require('request');
+var async = require('async');
 
 var BASEURL = 'http://buzzfeed.com/api/v2/';
 var SEARCHURL = 'http://buzzfeed.com/buzzfeed/search2_json';
@@ -18,10 +19,16 @@ module.exports.buzz = function(args, callback) {
 }
 
 module.exports.feeds = function(args,callback) {
-    module.exports.get('feeds/' + args.feed, args, function(error, body) {
-        if(!error)
-            body = JSON.parse(body);
-        callback(error, body);
+    var el = ["1", "2"," 3", "4","5","6","7","8","9","10"];
+    var json = [];
+    async.forEachOf(el, function(value, key, callback2) {
+        module.exports.get('feeds/' + args.feed + "?p=" + value, args, function(error, body) {
+            console.log(json);
+            json = json.concat(JSON.parse(body).flow);
+            callback2();
+        });
+    }, function(err) {
+        callback(err, json);
     });
 }
 
