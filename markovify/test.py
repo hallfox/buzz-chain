@@ -1,7 +1,7 @@
+import sys
 import markovify
 
-with open("./corpus.txt") as f:
-    text = f.read()
+text = sys.stdin.read()
 
 text_model = markovify.Text(text)
 
