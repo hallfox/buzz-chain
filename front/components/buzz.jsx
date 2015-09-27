@@ -1,12 +1,12 @@
 var imgArr = [
-	{url: "http://i.imgur.com/Mo3fHAa.jpg"},
-	{url: "http://i.imgur.com/fSSh7df.png"},
-	{url: "http://i.imgur.com/ebMsSFY.png"},
-	{url: "http://i.imgur.com/dCT18GU.jpg"},
-	{url: "http://i.imgur.com/ZqoLvyD.jpg"},
-	{url: "http://i.imgur.com/Wned0se.png"},
-	{url: "http://i.imgur.com/aWW56UQ.png"},
-	{url: "http://i.imgur.com/TgVwMGG.jpg"}
+	"http://i.imgur.com/Mo3fHAa.jpg",
+	"http://i.imgur.com/fSSh7df.png",
+	"http://i.imgur.com/ebMsSFY.png",
+	"http://i.imgur.com/dCT18GU.jpg",
+	"http://i.imgur.com/ZqoLvyD.jpg",
+	"http://i.imgur.com/Wned0se.png",
+	"http://i.imgur.com/aWW56UQ.png",
+	"http://i.imgur.com/TgVwMGG.jpg"
 ]
 
 var Buzz = React.createClass({
