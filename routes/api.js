@@ -116,8 +116,8 @@ var genMarkov = function(search, callback2, res) {
                         'desc': dchain[0]
                     },
                     {
-                        'title': hchain[1],
-                        'desc': dchain[1]
+                        'title': hchain[9],
+                        'desc': dchain[9]
                     },
                     {
                         'title': hchain[2],
