@@ -10,7 +10,7 @@ var Article = React.createClass({
         return (
             <div className="container">
                 <div>
-                    <p>BuzzFeed Logo</p>
+                    <h1>BuzzFeed Logo</h1>
                     <h1 className="article-title"></h1>
                     <div className="author">
                         <div className="author-image"></div>
