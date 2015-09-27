@@ -70,7 +70,7 @@ module.exports.searchScraper = function(err, body) {
     }, function(err) {
         if(err)
             console.log(err);
-        //database.close()
+        database.close()
     });
 }
 
@@ -78,6 +78,6 @@ var collection, database;
 mongodb.connect('mongodb://localhost:27017/buzz', function(err, db) {
     database = db;
     collection = db.collection('stories');
-    buzzfeed.feeds({'feed': 'lol'}, module.exports.scraper);
+    // buzzfeed.feeds({'feed': 'lol'}, module.exports.scraper);
     // buzzfeed.search({'q': 'the pope'}, module.exports.searchScraper);
 });

@@ -38,8 +38,28 @@ router.get('/pope', function(req, res, next) {
     res.send(chain.fill(chain.pick()));
 });
 
+router.get('/py', function(req, res, next) {
+    collection.find({}).toArray(function(err, result) {
+        var string = ""
+        for(var i in result) {
+            result[i].description.forEach(function(doc) {
+                string += "\n" + doc;
+            });
+        }
+        var shell = new PythonShell('test.py', {scriptPath: 'markovify/'});
+        var chain = [];
+        shell.send(string);
+        shell.on('message', function(message) {
+            chain.push(message);
+        });
+        shell.end(function(err) {
+            if(err) throw err;
+            res.send(chain);
+        });
+    });
+});
+
 var getTitle = function(data, callback) {
-    
 }
 
 module.exports = router;
