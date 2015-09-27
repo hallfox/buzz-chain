@@ -32,7 +32,9 @@ var Footer = React.createClass({
 	render() {
         return (
             <div class="container-fluid" className="footer-title">
-                <footer>This is the footer.</footer>
+                <footer>
+                <p>'Created at HackNY Fall\'15. Praise the lord'</p>
+                <p>'PepeTheFrog'</p>
             </div>
         );
     }
